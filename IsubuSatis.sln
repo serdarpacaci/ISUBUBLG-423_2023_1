@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.KatalogService",
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E641BED9-8C52-4AAD-8981-900C841B99DE}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "identity", "..\..\..\..\..\..\micro\SiparisAPI\Services\Identity\identity.csproj", "{7F93A329-78B3-4CCE-8756-08F15D9CF5A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "identity", "Identity\identity.csproj", "{15232CE5-EE0D-490D-BF5B-C4C98000EDBB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,17 +19,16 @@ Global
 		{9060680F-A748-4429-8AB7-9867AA5CD719}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9060680F-A748-4429-8AB7-9867AA5CD719}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9060680F-A748-4429-8AB7-9867AA5CD719}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F93A329-78B3-4CCE-8756-08F15D9CF5A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F93A329-78B3-4CCE-8756-08F15D9CF5A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F93A329-78B3-4CCE-8756-08F15D9CF5A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F93A329-78B3-4CCE-8756-08F15D9CF5A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{15232CE5-EE0D-490D-BF5B-C4C98000EDBB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{15232CE5-EE0D-490D-BF5B-C4C98000EDBB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{15232CE5-EE0D-490D-BF5B-C4C98000EDBB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{15232CE5-EE0D-490D-BF5B-C4C98000EDBB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{9060680F-A748-4429-8AB7-9867AA5CD719} = {E641BED9-8C52-4AAD-8981-900C841B99DE}
-		{7F93A329-78B3-4CCE-8756-08F15D9CF5A9} = {E641BED9-8C52-4AAD-8981-900C841B99DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A53656B6-3674-4734-BE27-B6EC95040622}
