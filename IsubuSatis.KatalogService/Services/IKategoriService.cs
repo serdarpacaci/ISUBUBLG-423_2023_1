@@ -6,5 +6,8 @@ namespace IsubuSatis.KatalogService.Services
     {
         Task<List<KategoriDto>> GetKategoriler();
         Task CreateOrUpdate(CreateOrEditKategori input);
+
+        Task Delete(string id);
+
     }
 }

@@ -4,6 +4,7 @@ using IsubuSatis.KatalogService.Dtos;
 using IsubuSatis.KatalogService.Models;
 using Microsoft.Extensions.Options;
 using MongoDB.Driver;
+using System.Linq;
 
 namespace IsubuSatis.KatalogService.Services
 {
@@ -37,9 +38,18 @@ namespace IsubuSatis.KatalogService.Services
             }
         }
 
-        private Task Update(CreateOrEditKategori input)
+        private async Task Update(CreateOrEditKategori input)
         {
-            throw new NotImplementedException();
+            var kategori = _kategoriCollection.AsQueryable()
+                .Where(x => x.Id == input.Id)
+                .FirstOrDefault();
+
+            _mapper.Map(input, kategori);
+
+            await _kategoriCollection.ReplaceOneAsync(
+                Builders<Kategori>.Filter.Eq(x => x.Id, input.Id), kategori);
+            //var kategori = _mapper.Map<Kategori>(input);
+
         }
 
         private async Task Create(CreateOrEditKategori input)
@@ -57,6 +67,13 @@ namespace IsubuSatis.KatalogService.Services
             var result = _mapper.Map<List<KategoriDto>>(kategoriler);
 
             return result;
+        }
+
+        public async Task Delete(string id)
+        {
+            await _kategoriCollection.DeleteOneAsync(
+               Builders<Kategori>.Filter.Eq(x => x.Id, id));
+            //var kategori = _mapper.Map<Kategori>(input);
         }
     }
 }

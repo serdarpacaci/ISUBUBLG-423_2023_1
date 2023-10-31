@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace IsubuSatis.KatalogService.Controllers
 {
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class KategoriController : ControllerBase
     {
@@ -36,6 +36,19 @@ namespace IsubuSatis.KatalogService.Controllers
         public async Task CreateOrUpdate(CreateOrEditKategori input)
         {
             await _kategoriService.CreateOrUpdate(input);
+        }
+
+        [HttpPost]
+        //[Route("/KategoriAktiflikSet")]
+        public async Task<IActionResult> KategoriAktiflikSet(PostTestModel input)
+        {
+            return Ok(input);
+        }
+
+        [HttpDelete]
+        public async Task Delete(string id)
+        {
+            await _kategoriService.Delete(id);
         }
     }
 }
