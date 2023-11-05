@@ -3,8 +3,8 @@
 
 
 using IdentityServer4;
-using identity.Data;
-using identity.Models;
+using IsubuSatis.IdentityServer.Data;
+using IsubuSatis.IdentityServer.Models;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -13,7 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 
-namespace identity
+namespace IsubuSatis.IdentityServer
 {
     public class Startup
     {
@@ -59,7 +59,7 @@ namespace identity
                 .AddGoogle(options =>
                 {
                     options.SignInScheme = IdentityServerConstants.ExternalCookieAuthenticationScheme;
-                    
+
                     // register your IdentityServer with Google at https://console.developers.google.com
                     // enable the Google+ API
                     // set the redirect URI to https://localhost:5001/signin-google

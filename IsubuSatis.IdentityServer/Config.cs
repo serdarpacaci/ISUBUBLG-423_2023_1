@@ -5,7 +5,7 @@
 using IdentityServer4.Models;
 using System.Collections.Generic;
 
-namespace identity
+namespace IsubuSatis.IdentityServer
 {
     public static class Config
     {
