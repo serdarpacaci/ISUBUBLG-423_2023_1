@@ -1,5 +1,6 @@
 ﻿using IsubuSatis.KatalogService.Dtos;
 using IsubuSatis.KatalogService.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -7,6 +8,7 @@ namespace IsubuSatis.KatalogService.Controllers
 {
     [Route("api/[controller]/[action]")]
     [ApiController]
+    [Authorize]
     public class KategoriController : ControllerBase
     {
         private readonly IKategoriService _kategoriService;

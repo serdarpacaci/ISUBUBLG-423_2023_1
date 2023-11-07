@@ -1,6 +1,7 @@
 
 using IsubuSatis.KatalogService.Ayarlar;
 using IsubuSatis.KatalogService.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 namespace IsubuSatis.KatalogService
 {
@@ -23,6 +24,13 @@ namespace IsubuSatis.KatalogService
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(x =>
+                {
+                    x.Authority = "https://localhost:5001";
+                    x.Audience = "resource_katalog";
+                });
+
             var app = builder.Build();
 
             // Configure the HTTP request pipeline.
@@ -33,6 +41,8 @@ namespace IsubuSatis.KatalogService
             }
 
             app.UseHttpsRedirection();
+
+            app.UseAuthentication();
 
             app.UseAuthorization();
 
