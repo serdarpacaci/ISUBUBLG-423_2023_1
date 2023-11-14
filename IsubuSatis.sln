@@ -9,6 +9,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{E6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.IdentityServer", "IsubuSatis.IdentityServer\IsubuSatis.IdentityServer.csproj", "{764E3E7E-962C-4180-8023-B9364CF16D2A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.FotografDepo", "IsubuSatis.FotografDepo\IsubuSatis.FotografDepo.csproj", "{1862792F-B979-4E25-9D2C-9C27D53DE939}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -23,6 +25,10 @@ Global
 		{764E3E7E-962C-4180-8023-B9364CF16D2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{764E3E7E-962C-4180-8023-B9364CF16D2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{764E3E7E-962C-4180-8023-B9364CF16D2A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1862792F-B979-4E25-9D2C-9C27D53DE939}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1862792F-B979-4E25-9D2C-9C27D53DE939}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1862792F-B979-4E25-9D2C-9C27D53DE939}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1862792F-B979-4E25-9D2C-9C27D53DE939}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -30,6 +36,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{9060680F-A748-4429-8AB7-9867AA5CD719} = {E641BED9-8C52-4AAD-8981-900C841B99DE}
 		{764E3E7E-962C-4180-8023-B9364CF16D2A} = {E641BED9-8C52-4AAD-8981-900C841B99DE}
+		{1862792F-B979-4E25-9D2C-9C27D53DE939} = {E641BED9-8C52-4AAD-8981-900C841B99DE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A53656B6-3674-4734-BE27-B6EC95040622}

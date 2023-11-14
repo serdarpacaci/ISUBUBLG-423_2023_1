@@ -16,6 +16,7 @@ namespace IsubuSatis.IdentityServer
             new ApiResource[]
             {
                 new ApiResource("resource_katalog"){ Scopes = {"kategori", "kategori_list"}},
+                new ApiResource("resource_fotografDepo"){ Scopes = {"fotograf"}},
                 new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -37,6 +38,7 @@ namespace IsubuSatis.IdentityServer
                 new ApiScope("kategori_create"),
                 new ApiScope("kategori_update"),
                 new ApiScope("kategori_delete"),
+                new ApiScope("fotograf"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName),
 
             };
@@ -50,7 +52,7 @@ namespace IsubuSatis.IdentityServer
                     ClientId="IsubuSatisMvc",
                     
                     ClientSecrets = { new Secret("IsubuSecret".Sha256())},
-                    AllowedScopes= { "kategori", IdentityServerConstants.LocalApi.ScopeName },
+                    AllowedScopes= { "kategori", IdentityServerConstants.LocalApi.ScopeName, "fotograf" },
                     AllowedGrantTypes = GrantTypes.ClientCredentials
 
                 },
