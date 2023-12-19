@@ -1,4 +1,9 @@
 
+using IsubuSatis.SepetService.Ayarlar;
+using IsubuSatis.SepetService.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using System.IdentityModel.Tokens.Jwt;
+
 namespace IsubuSatis.SepetService
 {
     public class Program
@@ -7,6 +12,8 @@ namespace IsubuSatis.SepetService
         {
             var builder = WebApplication.CreateBuilder(args);
 
+            var redisSection = builder.Configuration.GetSection("RedisSettings");
+            builder.Services.Configure<RedisSettings>(redisSection);
 
             //Local cache
             //Distributed cache
@@ -14,6 +21,11 @@ namespace IsubuSatis.SepetService
             //On-Demand Caching
             //Pre-populate Cashing
 
+
+            builder.Services.AddSingleton<RedisService>();
+            builder.Services.AddScoped<ISepetService, IsubuSepetService>();
+            builder.Services.AddScoped<IIdentityHelperService, IdentityHelperService>();
+            
 
             // Add services to the container.
 
@@ -23,6 +35,17 @@ namespace IsubuSatis.SepetService
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddMemoryCache();
+
+            builder.Services.AddHttpContextAccessor();
+
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(x =>
+                {
+                    x.Authority = "https://localhost:5001";
+                    x.Audience = "resource_sepet";
+                });
+
+            JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Remove("sub");
 
             var app = builder.Build();
 
@@ -35,6 +58,7 @@ namespace IsubuSatis.SepetService
 
             app.UseHttpsRedirection();
 
+            app.UseAuthentication();
             app.UseAuthorization();
 
 
