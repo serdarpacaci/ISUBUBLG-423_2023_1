@@ -1,0 +1,6 @@
+@IsubuSatis.OdemeService_HostAddress = http://localhost:5099
+
+GET {{IsubuSatis.OdemeService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

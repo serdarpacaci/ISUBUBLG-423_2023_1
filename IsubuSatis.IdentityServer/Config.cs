@@ -18,6 +18,10 @@ namespace IsubuSatis.IdentityServer
                 new ApiResource("resource_katalog"){ Scopes = {"kategori", "kategori_list"}},
                 new ApiResource("resource_fotografDepo"){ Scopes = {"fotograf"}},
                 new ApiResource("resource_sepet"){ Scopes = {"sepet"}},
+                new ApiResource("resource_indirim"){ Scopes = {"indirim"}},
+                new ApiResource("resource_siparis"){ Scopes = {"siparis"}},
+                new ApiResource("resource_odeme"){ Scopes = {"odeme"}},
+                new ApiResource("resource_gateway"){ Scopes = {"gateway"}},
                 new ApiResource(IdentityServerConstants.LocalApi.ScopeName)
             };
 
@@ -41,6 +45,10 @@ namespace IsubuSatis.IdentityServer
                 new ApiScope("kategori_delete"),
                 new ApiScope("fotograf"),
                 new ApiScope("sepet"),
+                new ApiScope("indirim"),
+                new ApiScope("siparis"),
+                new ApiScope("odeme"),
+                new ApiScope("gateway"),
                 new ApiScope(IdentityServerConstants.LocalApi.ScopeName),
 
             };

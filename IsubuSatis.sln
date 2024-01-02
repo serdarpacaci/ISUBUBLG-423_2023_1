@@ -13,11 +13,23 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.FotografDepo", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.SepetService", "IsubuSatis.SepetService\IsubuSatis.SepetService.csproj", "{05938F5F-F1EB-4A57-A5E1-F71E0EF2D80F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.IndirimService", "IsubuSatis.IndirimService\IsubuSatis.IndirimService.csproj", "{2A90AC31-216F-4526-B0EE-361E5A2C4507}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.IndirimService", "IsubuSatis.IndirimService\IsubuSatis.IndirimService.csproj", "{2A90AC31-216F-4526-B0EE-361E5A2C4507}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Siparis", "Siparis", "{8C5B879B-2785-420A-8853-00DB747EF1E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.Siparis.Domain", "IsubuSatis.Siparis.Domain\IsubuSatis.Siparis.Domain.csproj", "{3F38A266-88C9-4C08-82AD-EAE981A29584}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.Siparis.Domain", "IsubuSatis.Siparis.Domain\IsubuSatis.Siparis.Domain.csproj", "{3F38A266-88C9-4C08-82AD-EAE981A29584}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.Siparis.Application", "IsubuSatis.Siparis.Application\IsubuSatis.Siparis.Application.csproj", "{537A9EF0-7C19-49C3-9634-06C1D6993D15}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.Siparis.Infrastructure", "IsubuSatis.Siparis.Infrastructure\IsubuSatis.Siparis.Infrastructure.csproj", "{19EF00DF-F06A-4BA5-BF92-04965E9A4B7A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.Siparis.Api", "IsubuSatis.Siparis.Api\IsubuSatis.Siparis.Api.csproj", "{85045A4B-38D8-450B-A8DC-8AAA76E2A215}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IsubuSatis.OdemeService", "IsubuSatis.OdemeService\IsubuSatis.OdemeService.csproj", "{FE562E69-C53B-465F-BCB7-85215F13FBF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Gateways", "Gateways", "{EF72F94F-6418-4D8C-ACE4-143E264FFE35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IsubuSatis.Gateway2", "IsubuSatis.Gateway2\IsubuSatis.Gateway2.csproj", "{6B98AFBB-5E67-45E8-9DAA-8355BE5208B2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +61,26 @@ Global
 		{3F38A266-88C9-4C08-82AD-EAE981A29584}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F38A266-88C9-4C08-82AD-EAE981A29584}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3F38A266-88C9-4C08-82AD-EAE981A29584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{537A9EF0-7C19-49C3-9634-06C1D6993D15}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{537A9EF0-7C19-49C3-9634-06C1D6993D15}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{537A9EF0-7C19-49C3-9634-06C1D6993D15}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{537A9EF0-7C19-49C3-9634-06C1D6993D15}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19EF00DF-F06A-4BA5-BF92-04965E9A4B7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EF00DF-F06A-4BA5-BF92-04965E9A4B7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EF00DF-F06A-4BA5-BF92-04965E9A4B7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EF00DF-F06A-4BA5-BF92-04965E9A4B7A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{85045A4B-38D8-450B-A8DC-8AAA76E2A215}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{85045A4B-38D8-450B-A8DC-8AAA76E2A215}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{85045A4B-38D8-450B-A8DC-8AAA76E2A215}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{85045A4B-38D8-450B-A8DC-8AAA76E2A215}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE562E69-C53B-465F-BCB7-85215F13FBF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE562E69-C53B-465F-BCB7-85215F13FBF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE562E69-C53B-465F-BCB7-85215F13FBF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE562E69-C53B-465F-BCB7-85215F13FBF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B98AFBB-5E67-45E8-9DAA-8355BE5208B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B98AFBB-5E67-45E8-9DAA-8355BE5208B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B98AFBB-5E67-45E8-9DAA-8355BE5208B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B98AFBB-5E67-45E8-9DAA-8355BE5208B2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +93,11 @@ Global
 		{2A90AC31-216F-4526-B0EE-361E5A2C4507} = {E641BED9-8C52-4AAD-8981-900C841B99DE}
 		{8C5B879B-2785-420A-8853-00DB747EF1E9} = {E641BED9-8C52-4AAD-8981-900C841B99DE}
 		{3F38A266-88C9-4C08-82AD-EAE981A29584} = {8C5B879B-2785-420A-8853-00DB747EF1E9}
+		{537A9EF0-7C19-49C3-9634-06C1D6993D15} = {8C5B879B-2785-420A-8853-00DB747EF1E9}
+		{19EF00DF-F06A-4BA5-BF92-04965E9A4B7A} = {8C5B879B-2785-420A-8853-00DB747EF1E9}
+		{85045A4B-38D8-450B-A8DC-8AAA76E2A215} = {8C5B879B-2785-420A-8853-00DB747EF1E9}
+		{FE562E69-C53B-465F-BCB7-85215F13FBF3} = {E641BED9-8C52-4AAD-8981-900C841B99DE}
+		{6B98AFBB-5E67-45E8-9DAA-8355BE5208B2} = {EF72F94F-6418-4D8C-ACE4-143E264FFE35}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A53656B6-3674-4734-BE27-B6EC95040622}
